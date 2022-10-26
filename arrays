@@ -1,0 +1,18 @@
+for i in range(int(input())):
+    s=input()
+    l1=s.split()
+    l=list(map(lambda x:int(x),l1))
+    n,q=l[0],l[1]
+    s=input()
+    l1=s.split()
+    l=list(map(lambda x:int(x),l1))
+    ans=sum(l)
+    for i in range(q):
+        ss=input()
+        l2=ss.split()
+        l3=list(map(lambda x:int(x),l2))
+        l,r=l3[0],l3[1]
+        if (r-l+1)%2!=0:
+            ans+=1
+    print(ans)
+    
